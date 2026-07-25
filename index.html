@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheneshwar Krupa Welding Works | Kopargaon</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1><i class="fa-solid fa-fire-burner"></i> Sheneshwar Krupa</h1>
+            <p>Welding & Fabrication Works - Sanvatsar, Kopargaon</p>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <h2>Aapke Ghar Aur Shop Ke Liye Sabse Behtar Welding Work</h2>
+        <p>Main Gates, Safety Grilles, Metal Sheds, Rolling Shutters, aur Custom Fabrication.</p>
+        <a href="#services" class="btn">Hamari Services Dekhein</a>
+    </section>
+
+    <!-- Services / Products Section -->
+    <section class="services" id="services">
+        <h2>Hamari Services & Products</h2>
+        <div class="service-grid">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?w=400" alt="Iron Gate">
+                <h3>Designer Iron Gates</h3>
+                <p>Heavy duty, stylish aur durable safety gates.</p>
+                <button onclick="orderWhatsApp('Designer Iron Gate')">WhatsApp Par Order Karein</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400" alt="Safety Grilles">
+                <h3>Window Safety Grilles</h3>
+                <p>Majboot aur attractive window grilles aapke ghar ke liye.</p>
+                <button onclick="orderWhatsApp('Window Safety Grilles')">WhatsApp Par Order Karein</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400" alt="Rolling Shutter">
+                <h3>Rolling Shutters & Sheds</h3>
+                <p>Shops aur Factories ke liye custom rolling shutters.</p>
+                <button onclick="orderWhatsApp('Rolling Shutters')">WhatsApp Par Order Karein</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Floating Quick Buttons -->
+    <div class="floating-btn">
+        <a href="https://wa.me/918888583977?text=Hello,%20mujhe%20welding%20work%20ke%20liye%20enquiry%20karni%20hai." class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="tel:+918888583977" class="call-btn">
+            <i class="fa-solid fa-phone"></i> Call Now
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Sheneshwar Krupa Welding Works</strong></p>
+        <p><i class="fa-solid fa-phone"></i> Contact: +91 8888583977</p>
+        <p><i class="fa-solid fa-location-dot"></i> Address: Sanvatsar, Kopargaon</p>
+        <p>&copy; 2026 All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function orderWhatsApp(serviceName) {
+            var phoneNumber = "918888583977"; 
+            var message = "Hello Sheneshwar Krupa Welding Works, Mujhe " + serviceName + " ke bare me inquiry karni hai aur order dena hai.";
+            var url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
